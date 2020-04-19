@@ -32,8 +32,9 @@ public class Hangman extends KeyAdapter {
 	}
 
 	private void addPuzzles() {
-//		puzzles.push("defenestrate");
-//		puzzles.push("fancypants");
+//		puzzles.push("_defenestrate");
+//		puzzles.push("insatiable");
+//		puzzles.push("1fancypants");
 //		puzzles.push("elements");
 		List<String> words = FileHelper.loadFileContentsIntoArrayList("resource/words.txt");
 		for (int i = 0; i < words.size(); i++) {
@@ -45,7 +46,7 @@ public class Hangman extends KeyAdapter {
 	private String puzzle;
 
 	private void createUI() {
-//		playDeathKnell();
+		playDeathKnell();
 		JFrame frame = new JFrame("June's Hangman");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		panel.add(livesLabel);
